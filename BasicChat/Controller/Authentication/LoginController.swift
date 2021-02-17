@@ -18,6 +18,30 @@ class LoginController:  UIViewController {
         return iv
     }()
     
+    private let emailContainerView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .cyan
+        view.setHeight(height: 50)
+        return view
+    }()
+    
+    private let passwordContainerView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .yellow
+        view.setHeight(height: 50)
+        return view
+    }()
+    
+    private let loginButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.setTitle("Log In", for: .normal)
+        button.layer.cornerRadius = 5
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
+        button.backgroundColor = .systemRed
+        button.setHeight(height: 50)
+        return button
+    }()
+    
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
@@ -34,12 +58,16 @@ class LoginController:  UIViewController {
         configureGradientLayer()
         
         view.addSubview(iconImage)
-        iconImage.translatesAutoresizingMaskIntoConstraints = false
-        iconImage.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        iconImage.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        iconImage.heightAnchor.constraint(equalToConstant: 120).isActive = true
-        iconImage.widthAnchor.constraint(equalToConstant: 120).isActive = true
-
+        iconImage.centerX(inView: view)
+        iconImage.anchor(top: view.safeAreaLayoutGuide.topAnchor, paddingTop: 32)
+        iconImage.setDimensions(height: 120, width: 120)
+        
+        let stack = UIStackView(arrangedSubviews: [emailContainerView, passwordContainerView, loginButton])
+        stack.axis = .vertical
+        stack.spacing = 16
+        
+        view.addSubview(stack)
+        stack.anchor(top: iconImage.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor, paddingTop: 32, paddingLeft: 32, paddingRight: 32)
     }
     
     func configureGradientLayer() {
