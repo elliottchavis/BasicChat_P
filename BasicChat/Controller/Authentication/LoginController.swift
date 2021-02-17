@@ -18,18 +18,48 @@ class LoginController:  UIViewController {
         return iv
     }()
     
-    private let emailContainerView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .cyan
-        view.setHeight(height: 50)
-        return view
+    private lazy var emailContainerView: UIView = {
+        let containerView = UIView()
+        containerView.backgroundColor = .clear
+        containerView.setHeight(height: 50)
+        
+        let iv = UIImageView()
+        iv.image = UIImage(systemName: "envelope")
+        iv.tintColor = .white
+        
+        containerView.addSubview(iv)
+        iv.centerY(inView: containerView)
+        iv.anchor(left: containerView.leftAnchor, paddingLeft: 8)
+        iv.setDimensions(height: 25, width: 25)
+        
+        containerView.addSubview(emailTextField)
+        emailTextField.centerY(inView: containerView)
+        emailTextField.anchor(left: iv.rightAnchor, bottom: containerView.bottomAnchor, right: containerView.rightAnchor, paddingLeft: 8, paddingBottom: 4)
+        
+        return containerView
+        
+        
     }()
     
-    private let passwordContainerView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .yellow
-        view.setHeight(height: 50)
-        return view
+    private lazy var passwordContainerView: UIView = {
+        let containerView = UIView()
+        containerView.backgroundColor = .clear
+        containerView.setHeight(height: 50)
+        
+        let iv = UIImageView()
+        iv.image = UIImage(systemName: "lock")
+        iv.tintColor = .white
+        
+        containerView.addSubview(iv)
+        iv.centerY(inView: containerView)
+        iv.anchor(left: containerView.leftAnchor, paddingLeft: 8)
+        iv.setDimensions(height: 25, width: 25)
+        
+        containerView.addSubview(passwordTextField)
+        passwordTextField.centerY(inView: containerView)
+        passwordTextField.anchor(left: iv.rightAnchor, bottom: containerView.bottomAnchor, right: containerView.rightAnchor, paddingLeft: 8, paddingBottom: 4)
+        
+        return containerView
     }()
     
     private let loginButton: UIButton = {
@@ -40,6 +70,21 @@ class LoginController:  UIViewController {
         button.backgroundColor = .systemRed
         button.setHeight(height: 50)
         return button
+    }()
+    
+    private let emailTextField: UITextField = {
+        let tf = UITextField()
+        tf.placeholder = "Email"
+        tf.textColor = .white
+        return tf
+    }()
+    
+    private let passwordTextField: UITextField = {
+        let tf = UITextField()
+        tf.placeholder = "Password"
+        tf.isSecureTextEntry = true
+        tf.textColor = .white
+        return tf
     }()
     
     // MARK: - Lifecycle
