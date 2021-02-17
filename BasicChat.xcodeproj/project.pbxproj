@@ -17,6 +17,8 @@
 		E294F72225DCA99D00D4992C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E294F72125DCA99D00D4992C /* Assets.xcassets */; };
 		E294F72525DCA99D00D4992C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E294F72325DCA99D00D4992C /* LaunchScreen.storyboard */; };
 		E294F73425DCAC3100D4992C /* ConversationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E294F73325DCAC3100D4992C /* ConversationsController.swift */; };
+		E2F4743F25DDA89000265A56 /* InputContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F4743E25DDA89000265A56 /* InputContainerView.swift */; };
+		E2F4744225DDADB900265A56 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F4744125DDADB900265A56 /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		E294F72425DCA99D00D4992C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E294F72625DCA99D00D4992C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E294F73325DCAC3100D4992C /* ConversationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsController.swift; sourceTree = "<group>"; };
+		E2F4743E25DDA89000265A56 /* InputContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputContainerView.swift; sourceTree = "<group>"; };
+		E2F4744125DDADB900265A56 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +128,8 @@
 		E294F73125DCA9CA00D4992C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E2F4743E25DDA89000265A56 /* InputContainerView.swift */,
+				E2F4744125DDADB900265A56 /* CustomTextField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -206,12 +212,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E252696825DD8C8900BFFCC8 /* Extensions.swift in Sources */,
+				E2F4743F25DDA89000265A56 /* InputContainerView.swift in Sources */,
 				E294F71D25DCA99D00D4992C /* ViewController.swift in Sources */,
 				E294F71925DCA99D00D4992C /* AppDelegate.swift in Sources */,
 				E294F73425DCAC3100D4992C /* ConversationsController.swift in Sources */,
 				E294F71B25DCA99D00D4992C /* SceneDelegate.swift in Sources */,
 				E252695E25DD849400BFFCC8 /* RegistrationController.swift in Sources */,
 				E252695B25DD848A00BFFCC8 /* LoginController.swift in Sources */,
+				E2F4744225DDADB900265A56 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
