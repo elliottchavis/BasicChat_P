@@ -13,6 +13,7 @@
 		E294F72025DCA99D00D4992C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E294F71E25DCA99D00D4992C /* Main.storyboard */; };
 		E294F72225DCA99D00D4992C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E294F72125DCA99D00D4992C /* Assets.xcassets */; };
 		E294F72525DCA99D00D4992C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E294F72325DCA99D00D4992C /* LaunchScreen.storyboard */; };
+		E294F73425DCAC3100D4992C /* ConversationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E294F73325DCAC3100D4992C /* ConversationsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E294F72125DCA99D00D4992C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E294F72425DCA99D00D4992C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E294F72625DCA99D00D4992C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E294F73325DCAC3100D4992C /* ConversationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +62,8 @@
 				E294F73125DCA9CA00D4992C /* View */,
 				E294F73025DCA9C400D4992C /* ViewModel */,
 				E294F72F25DCA9C000D4992C /* Controller */,
-				E294F72E25DCA9BD00D4992C /* New Group1 */,
-				E294F72D25DCA9B600D4992C /* New Group */,
+				E294F72E25DCA9BD00D4992C /* API */,
+				E294F72D25DCA9B600D4992C /* Utilities */,
 				E294F71825DCA99D00D4992C /* AppDelegate.swift */,
 				E294F71A25DCA99D00D4992C /* SceneDelegate.swift */,
 				E294F71C25DCA99D00D4992C /* ViewController.swift */,
@@ -73,23 +75,24 @@
 			path = BasicChat;
 			sourceTree = "<group>";
 		};
-		E294F72D25DCA9B600D4992C /* New Group */ = {
+		E294F72D25DCA9B600D4992C /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = "New Group";
+			path = Utilities;
 			sourceTree = "<group>";
 		};
-		E294F72E25DCA9BD00D4992C /* New Group1 */ = {
+		E294F72E25DCA9BD00D4992C /* API */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = "New Group1";
+			path = API;
 			sourceTree = "<group>";
 		};
 		E294F72F25DCA9C000D4992C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E294F73325DCAC3100D4992C /* ConversationsController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 			files = (
 				E294F71D25DCA99D00D4992C /* ViewController.swift in Sources */,
 				E294F71925DCA99D00D4992C /* AppDelegate.swift in Sources */,
+				E294F73425DCAC3100D4992C /* ConversationsController.swift in Sources */,
 				E294F71B25DCA99D00D4992C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
