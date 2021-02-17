@@ -19,6 +19,7 @@
 		E294F73425DCAC3100D4992C /* ConversationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E294F73325DCAC3100D4992C /* ConversationsController.swift */; };
 		E2F4743F25DDA89000265A56 /* InputContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F4743E25DDA89000265A56 /* InputContainerView.swift */; };
 		E2F4744225DDADB900265A56 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F4744125DDADB900265A56 /* CustomTextField.swift */; };
+		E2FE82B125DDCAB5008655CB /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE82B025DDCAB5008655CB /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		E294F73325DCAC3100D4992C /* ConversationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsController.swift; sourceTree = "<group>"; };
 		E2F4743E25DDA89000265A56 /* InputContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputContainerView.swift; sourceTree = "<group>"; };
 		E2F4744125DDADB900265A56 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		E2FE82B025DDCAB5008655CB /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 		E294F73025DCA9C400D4992C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				E2FE82B025DDCAB5008655CB /* LoginViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				E294F71B25DCA99D00D4992C /* SceneDelegate.swift in Sources */,
 				E252695E25DD849400BFFCC8 /* RegistrationController.swift in Sources */,
 				E252695B25DD848A00BFFCC8 /* LoginController.swift in Sources */,
+				E2FE82B125DDCAB5008655CB /* LoginViewModel.swift in Sources */,
 				E2F4744225DDADB900265A56 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
