@@ -20,6 +20,7 @@
 		E2F4743F25DDA89000265A56 /* InputContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F4743E25DDA89000265A56 /* InputContainerView.swift */; };
 		E2F4744225DDADB900265A56 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F4744125DDADB900265A56 /* CustomTextField.swift */; };
 		E2FE82B125DDCAB5008655CB /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE82B025DDCAB5008655CB /* LoginViewModel.swift */; };
+		E2FE82B425DDED38008655CB /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE82B325DDED38008655CB /* RegistrationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		E2F4743E25DDA89000265A56 /* InputContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputContainerView.swift; sourceTree = "<group>"; };
 		E2F4744125DDADB900265A56 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		E2FE82B025DDCAB5008655CB /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		E2FE82B325DDED38008655CB /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				E2FE82B025DDCAB5008655CB /* LoginViewModel.swift */,
+				E2FE82B325DDED38008655CB /* RegistrationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E252696825DD8C8900BFFCC8 /* Extensions.swift in Sources */,
+				E2FE82B425DDED38008655CB /* RegistrationViewModel.swift in Sources */,
 				E2F4743F25DDA89000265A56 /* InputContainerView.swift in Sources */,
 				E294F71D25DCA99D00D4992C /* ViewController.swift in Sources */,
 				E294F71925DCA99D00D4992C /* AppDelegate.swift in Sources */,
