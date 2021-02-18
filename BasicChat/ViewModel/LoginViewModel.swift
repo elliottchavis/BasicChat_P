@@ -7,7 +7,11 @@
 
 import UIKit
 
-struct LoginViewModel {
+protocol  AuthenticationProtocol {
+    var formIsValid: Bool { get }
+}
+
+struct LoginViewModel: AuthenticationProtocol {
     var email: String?
     var password: String?
     
