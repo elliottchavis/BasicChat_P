@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -66,7 +66,6 @@
 				57CAF98E7C26769E31DF727D /* Pods-BasicChat.debug.xcconfig */,
 				DABCEF72A27792CAAD4ADB38 /* Pods-BasicChat.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -144,8 +143,8 @@
 		E294F72F25DCA9C000D4992C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E252695925DD846300BFFCC8 /* Authentication */,
 				E294F73325DCAC3100D4992C /* ConversationsController.swift */,
+				E252695925DD846300BFFCC8 /* Authentication */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -450,6 +449,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BasicChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -469,6 +469,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BasicChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
