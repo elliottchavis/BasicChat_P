@@ -13,6 +13,7 @@
 		E252695E25DD849400BFFCC8 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E252695D25DD849400BFFCC8 /* RegistrationController.swift */; };
 		E252696825DD8C8900BFFCC8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E252696725DD8C8900BFFCC8 /* Extensions.swift */; };
 		E262E03A25DEC9390091EEBB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E262E03925DEC9390091EEBB /* GoogleService-Info.plist */; };
+		E28879F625E1B96500308455 /* NewMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28879F525E1B96500308455 /* NewMessageController.swift */; };
 		E294F71925DCA99D00D4992C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E294F71825DCA99D00D4992C /* AppDelegate.swift */; };
 		E294F71B25DCA99D00D4992C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E294F71A25DCA99D00D4992C /* SceneDelegate.swift */; };
 		E294F71D25DCA99D00D4992C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E294F71C25DCA99D00D4992C /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 		E252695D25DD849400BFFCC8 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		E252696725DD8C8900BFFCC8 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		E262E03925DEC9390091EEBB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E28879F525E1B96500308455 /* NewMessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageController.swift; sourceTree = "<group>"; };
 		E294F71525DCA99D00D4992C /* BasicChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E294F71825DCA99D00D4992C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E294F71A25DCA99D00D4992C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 		E294F72F25DCA9C000D4992C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E28879F525E1B96500308455 /* NewMessageController.swift */,
 				E294F73325DCAC3100D4992C /* ConversationsController.swift */,
 				E252695925DD846300BFFCC8 /* Authentication */,
 			);
@@ -304,6 +307,7 @@
 				E252695B25DD848A00BFFCC8 /* LoginController.swift in Sources */,
 				E2FE82B125DDCAB5008655CB /* LoginViewModel.swift in Sources */,
 				E2F4744225DDADB900265A56 /* CustomTextField.swift in Sources */,
+				E28879F625E1B96500308455 /* NewMessageController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
