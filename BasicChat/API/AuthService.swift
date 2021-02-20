@@ -29,12 +29,11 @@ struct AuthService {
         
         let filename = NSUUID().uuidString
         let ref = Storage.storage().reference(withPath: "/profile_images/\(filename)")
-        print("Get storage name")
-        
         
         ref.putData(imageData, metadata: nil) { (meta, error) in
             if let error = error {
-                print("DEBUG: Failed to upload image with error \(error.localizedDescription)")
+                completion!(error)
+                return
             }
         
         
@@ -46,7 +45,7 @@ struct AuthService {
                 
                 Auth.auth().createUser(withEmail: credentials.email, password: credentials.password) { (result, error) in
                     if let error = error {
-                        print("DEBUG: Failed to create user with error: \(error.localizedDescription)")
+                        completion!(error)
                         return
                     }
 
