@@ -57,6 +57,10 @@ extension NewMessageController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! UserCell
+        cell.user = users[indexPath.row]
+        
+        print("DEBUG: Index row is \(indexPath.row)")
+        print("DEBUG: User in array is \(users[indexPath.row].username)")
         return cell
     }
 }
