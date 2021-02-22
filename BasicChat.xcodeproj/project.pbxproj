@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D5A2C0B9C40A50EDCB0737C1 /* Pods_BasicChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C72BEF47025EB45221C6138 /* Pods_BasicChat.framework */; };
 		E20FDB0C25E1C6A300DC9D45 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20FDB0B25E1C6A300DC9D45 /* UserCell.swift */; };
+		E2103C2F25E45DC2000E9EF5 /* CustomInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2103C2E25E45DC2000E9EF5 /* CustomInputAccessoryView.swift */; };
 		E2332E3225E1DC5D00CA2C5E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2332E3125E1DC5D00CA2C5E /* User.swift */; };
 		E2332E3525E1DCA800CA2C5E /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2332E3425E1DCA800CA2C5E /* Service.swift */; };
 		E251E52225E0D16600C8D265 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E251E52125E0D16600C8D265 /* AuthService.swift */; };
@@ -36,6 +37,7 @@
 		7C72BEF47025EB45221C6138 /* Pods_BasicChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BasicChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DABCEF72A27792CAAD4ADB38 /* Pods-BasicChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicChat.release.xcconfig"; path = "Target Support Files/Pods-BasicChat/Pods-BasicChat.release.xcconfig"; sourceTree = "<group>"; };
 		E20FDB0B25E1C6A300DC9D45 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		E2103C2E25E45DC2000E9EF5 /* CustomInputAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputAccessoryView.swift; sourceTree = "<group>"; };
 		E2332E3125E1DC5D00CA2C5E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E2332E3425E1DCA800CA2C5E /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		E251E52125E0D16600C8D265 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				E2F4743E25DDA89000265A56 /* InputContainerView.swift */,
 				E2F4744125DDADB900265A56 /* CustomTextField.swift */,
 				E20FDB0B25E1C6A300DC9D45 /* UserCell.swift */,
+				E2103C2E25E45DC2000E9EF5 /* CustomInputAccessoryView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				E2FF743D25E43E8800A8CA5E /* ChatController.swift in Sources */,
 				E2F4744225DDADB900265A56 /* CustomTextField.swift in Sources */,
 				E28879F625E1B96500308455 /* NewMessageController.swift in Sources */,
+				E2103C2F25E45DC2000E9EF5 /* CustomInputAccessoryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
