@@ -28,6 +28,7 @@
 		E2F4744225DDADB900265A56 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F4744125DDADB900265A56 /* CustomTextField.swift */; };
 		E2FE82B125DDCAB5008655CB /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE82B025DDCAB5008655CB /* LoginViewModel.swift */; };
 		E2FE82B425DDED38008655CB /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE82B325DDED38008655CB /* RegistrationViewModel.swift */; };
+		E2FF743D25E43E8800A8CA5E /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FF743C25E43E8800A8CA5E /* ChatController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		E2F4744125DDADB900265A56 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		E2FE82B025DDCAB5008655CB /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		E2FE82B325DDED38008655CB /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		E2FF743C25E43E8800A8CA5E /* ChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 				E28879F525E1B96500308455 /* NewMessageController.swift */,
 				E294F73325DCAC3100D4992C /* ConversationsController.swift */,
 				E252695925DD846300BFFCC8 /* Authentication */,
+				E2FF743C25E43E8800A8CA5E /* ChatController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 				E252695E25DD849400BFFCC8 /* RegistrationController.swift in Sources */,
 				E252695B25DD848A00BFFCC8 /* LoginController.swift in Sources */,
 				E2FE82B125DDCAB5008655CB /* LoginViewModel.swift in Sources */,
+				E2FF743D25E43E8800A8CA5E /* ChatController.swift in Sources */,
 				E2F4744225DDADB900265A56 /* CustomTextField.swift in Sources */,
 				E28879F625E1B96500308455 /* NewMessageController.swift in Sources */,
 			);
