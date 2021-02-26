@@ -15,7 +15,7 @@ struct Message {
     let isFromCurrentUser: Bool
     var user: User?
         
-    init(dictionary: [String: AnyObject]) {
+    init(dictionary: [String: Any]) {
         self.text = dictionary["text"] as? String ?? ""
         self.toId = dictionary["text"] as? String ?? ""
         self.fromId = dictionary["fromId"] as? String ?? ""
