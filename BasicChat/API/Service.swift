@@ -33,7 +33,7 @@ struct Service {
     
     static func fetchConversations(completion: @escaping([Conversation]) -> Void) {
         var conversations = [Conversation]()
-        let queue = DispatchQueue(label: "Firebase request")
+        //let queue = DispatchQueue(label: "Firebase request")
         guard let uid = Auth.auth().currentUser?.uid else { return }
         
         let query = COLLECTION_MESSAGES.document(uid).collection("recent-messages").order(by: "timestamp")
@@ -43,17 +43,12 @@ struct Service {
                 let dictionary = change.document.data()
                 let message = Message(dictionary: dictionary)
                 
-                queue.sync {
                     self.fetchUser(withUid: message.toId) { user in
                         let conversation = Conversation(user: user, message: message)
                         conversations.append(conversation)
                         completion(conversations)
                         print("Conversations = \(conversations.count)")
-                        
-                    }
                 }
-                
-                
             })
             
         }

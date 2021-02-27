@@ -17,7 +17,7 @@ struct Message {
         
     init(dictionary: [String: Any]) {
         self.text = dictionary["text"] as? String ?? ""
-        self.toId = dictionary["text"] as? String ?? ""
+        self.toId = dictionary["toId"] as? String ?? ""
         self.fromId = dictionary["fromId"] as? String ?? ""
         self.timestamp = dictionary["timestamp"] as? Timestamp ?? Timestamp(date: Date())
         
