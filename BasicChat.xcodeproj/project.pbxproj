@@ -16,6 +16,7 @@
 		E252695B25DD848A00BFFCC8 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E252695A25DD848A00BFFCC8 /* LoginController.swift */; };
 		E252695E25DD849400BFFCC8 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E252695D25DD849400BFFCC8 /* RegistrationController.swift */; };
 		E252696825DD8C8900BFFCC8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E252696725DD8C8900BFFCC8 /* Extensions.swift */; };
+		E256E34B25E9E99A000E15A6 /* ConversationsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E256E34A25E9E99A000E15A6 /* ConversationsCell.swift */; };
 		E2595E5525E6066A00E04E46 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2595E5425E6066A00E04E46 /* Constants.swift */; };
 		E262E03A25DEC9390091EEBB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E262E03925DEC9390091EEBB /* GoogleService-Info.plist */; };
 		E28879F625E1B96500308455 /* NewMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28879F525E1B96500308455 /* NewMessageController.swift */; };
@@ -26,6 +27,7 @@
 		E294F72225DCA99D00D4992C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E294F72125DCA99D00D4992C /* Assets.xcassets */; };
 		E294F72525DCA99D00D4992C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E294F72325DCA99D00D4992C /* LaunchScreen.storyboard */; };
 		E294F73425DCAC3100D4992C /* ConversationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E294F73325DCAC3100D4992C /* ConversationsController.swift */; };
+		E2B2E5E025E9F16700E38081 /* ConversationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B2E5DF25E9F16700E38081 /* ConversationViewModel.swift */; };
 		E2E67A9025E4797000E5B58B /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E67A8F25E4797000E5B58B /* MessageCell.swift */; };
 		E2E67A9325E484F600E5B58B /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E67A9225E484F600E5B58B /* Message.swift */; };
 		E2E67A9625E4896500E5B58B /* MessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E67A9525E4896500E5B58B /* MessageViewModel.swift */; };
@@ -48,6 +50,7 @@
 		E252695A25DD848A00BFFCC8 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		E252695D25DD849400BFFCC8 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		E252696725DD8C8900BFFCC8 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E256E34A25E9E99A000E15A6 /* ConversationsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsCell.swift; sourceTree = "<group>"; };
 		E2595E5425E6066A00E04E46 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E262E03925DEC9390091EEBB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E28879F525E1B96500308455 /* NewMessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageController.swift; sourceTree = "<group>"; };
@@ -60,6 +63,7 @@
 		E294F72425DCA99D00D4992C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E294F72625DCA99D00D4992C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E294F73325DCAC3100D4992C /* ConversationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsController.swift; sourceTree = "<group>"; };
+		E2B2E5DF25E9F16700E38081 /* ConversationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationViewModel.swift; sourceTree = "<group>"; };
 		E2E67A8F25E4797000E5B58B /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		E2E67A9225E484F600E5B58B /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		E2E67A9525E4896500E5B58B /* MessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewModel.swift; sourceTree = "<group>"; };
@@ -182,6 +186,7 @@
 				E2FE82B025DDCAB5008655CB /* LoginViewModel.swift */,
 				E2FE82B325DDED38008655CB /* RegistrationViewModel.swift */,
 				E2E67A9525E4896500E5B58B /* MessageViewModel.swift */,
+				E2B2E5DF25E9F16700E38081 /* ConversationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -194,6 +199,7 @@
 				E20FDB0B25E1C6A300DC9D45 /* UserCell.swift */,
 				E2103C2E25E45DC2000E9EF5 /* CustomInputAccessoryView.swift */,
 				E2E67A8F25E4797000E5B58B /* MessageCell.swift */,
+				E256E34A25E9E99A000E15A6 /* ConversationsCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -335,9 +341,11 @@
 				E2332E3225E1DC5D00CA2C5E /* User.swift in Sources */,
 				E2332E3525E1DCA800CA2C5E /* Service.swift in Sources */,
 				E2E67A9025E4797000E5B58B /* MessageCell.swift in Sources */,
+				E2B2E5E025E9F16700E38081 /* ConversationViewModel.swift in Sources */,
 				E294F71B25DCA99D00D4992C /* SceneDelegate.swift in Sources */,
 				E252695E25DD849400BFFCC8 /* RegistrationController.swift in Sources */,
 				E252695B25DD848A00BFFCC8 /* LoginController.swift in Sources */,
+				E256E34B25E9E99A000E15A6 /* ConversationsCell.swift in Sources */,
 				E2FE82B125DDCAB5008655CB /* LoginViewModel.swift in Sources */,
 				E2FF743D25E43E8800A8CA5E /* ChatController.swift in Sources */,
 				E2F4744225DDADB900265A56 /* CustomTextField.swift in Sources */,
@@ -492,8 +500,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y5PUS6B8C8;
 				INFOPLIST_FILE = BasicChat/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -512,8 +521,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y5PUS6B8C8;
 				INFOPLIST_FILE = BasicChat/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
