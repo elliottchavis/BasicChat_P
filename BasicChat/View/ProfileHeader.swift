@@ -7,9 +7,19 @@
 
 import UIKit
 
+protocol  ProfileHeaderDelegate: class {
+    func dismissController()
+}
+
 class ProfileHeader: UIView {
     
     // MARK: - Properties
+    
+    var user: User? {
+        didSet { populateUserData()}
+    }
+    
+    weak var delegate: ProfileHeaderDelegate?
     
     private let dismissButton: UIButton = {
         let button = UIButton(type: .system)
@@ -23,7 +33,7 @@ class ProfileHeader: UIView {
     private let profileImageView: UIImageView = {
         let iv = UIImageView()
         iv.clipsToBounds = true
-        iv.contentMode = .scaleToFill
+        iv.contentMode = .scaleAspectFill
         iv.layer.borderColor = UIColor.white.cgColor
         iv.layer.borderWidth = 4.0
         return iv
@@ -63,11 +73,21 @@ class ProfileHeader: UIView {
     // MARK: Selectors
     
     @objc func handleDismissal() {
-        
+        delegate?.dismissController()
     }
     
     
     // MARK: - Helpers
+    
+    func populateUserData() {
+        guard let user = user else { return }
+        
+        fullnameLabel.text = user.fullname
+        usernameLabel.text = "@" + user.username
+        
+        guard let url = URL(string: user.profileImageUrl) else { return }
+        profileImageView.sd_setImage(with: url)
+    }
     
     func configureUI() {
         profileImageView.setDimensions(height: 200, width: 200)
