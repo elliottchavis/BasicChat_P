@@ -10,6 +10,8 @@
 		D5A2C0B9C40A50EDCB0737C1 /* Pods_BasicChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C72BEF47025EB45221C6138 /* Pods_BasicChat.framework */; };
 		E20FDB0C25E1C6A300DC9D45 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20FDB0B25E1C6A300DC9D45 /* UserCell.swift */; };
 		E2103C2F25E45DC2000E9EF5 /* CustomInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2103C2E25E45DC2000E9EF5 /* CustomInputAccessoryView.swift */; };
+		E2258CB425EB399600FBD6C1 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2258CB325EB399600FBD6C1 /* ProfileController.swift */; };
+		E2258CB725EB3B4D00FBD6C1 /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2258CB625EB3B4D00FBD6C1 /* ProfileHeader.swift */; };
 		E2332E3225E1DC5D00CA2C5E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2332E3125E1DC5D00CA2C5E /* User.swift */; };
 		E2332E3525E1DCA800CA2C5E /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2332E3425E1DCA800CA2C5E /* Service.swift */; };
 		E251E52225E0D16600C8D265 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E251E52125E0D16600C8D265 /* AuthService.swift */; };
@@ -44,6 +46,8 @@
 		DABCEF72A27792CAAD4ADB38 /* Pods-BasicChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicChat.release.xcconfig"; path = "Target Support Files/Pods-BasicChat/Pods-BasicChat.release.xcconfig"; sourceTree = "<group>"; };
 		E20FDB0B25E1C6A300DC9D45 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		E2103C2E25E45DC2000E9EF5 /* CustomInputAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputAccessoryView.swift; sourceTree = "<group>"; };
+		E2258CB325EB399600FBD6C1 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		E2258CB625EB3B4D00FBD6C1 /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
 		E2332E3125E1DC5D00CA2C5E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E2332E3425E1DCA800CA2C5E /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		E251E52125E0D16600C8D265 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
@@ -176,6 +180,7 @@
 				E294F73325DCAC3100D4992C /* ConversationsController.swift */,
 				E252695925DD846300BFFCC8 /* Authentication */,
 				E2FF743C25E43E8800A8CA5E /* ChatController.swift */,
+				E2258CB325EB399600FBD6C1 /* ProfileController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -200,6 +205,7 @@
 				E2103C2E25E45DC2000E9EF5 /* CustomInputAccessoryView.swift */,
 				E2E67A8F25E4797000E5B58B /* MessageCell.swift */,
 				E256E34A25E9E99A000E15A6 /* ConversationsCell.swift */,
+				E2258CB625EB3B4D00FBD6C1 /* ProfileHeader.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -328,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2258CB425EB399600FBD6C1 /* ProfileController.swift in Sources */,
 				E252696825DD8C8900BFFCC8 /* Extensions.swift in Sources */,
 				E2595E5525E6066A00E04E46 /* Constants.swift in Sources */,
 				E2FE82B425DDED38008655CB /* RegistrationViewModel.swift in Sources */,
@@ -345,6 +352,7 @@
 				E294F71B25DCA99D00D4992C /* SceneDelegate.swift in Sources */,
 				E252695E25DD849400BFFCC8 /* RegistrationController.swift in Sources */,
 				E252695B25DD848A00BFFCC8 /* LoginController.swift in Sources */,
+				E2258CB725EB3B4D00FBD6C1 /* ProfileHeader.swift in Sources */,
 				E256E34B25E9E99A000E15A6 /* ConversationsCell.swift in Sources */,
 				E2FE82B125DDCAB5008655CB /* LoginViewModel.swift in Sources */,
 				E2FF743D25E43E8800A8CA5E /* ChatController.swift in Sources */,
@@ -502,7 +510,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y5PUS6B8C8;
 				INFOPLIST_FILE = BasicChat/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -523,7 +531,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y5PUS6B8C8;
 				INFOPLIST_FILE = BasicChat/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
