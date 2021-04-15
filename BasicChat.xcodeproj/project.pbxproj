@@ -21,6 +21,8 @@
 		E256E34B25E9E99A000E15A6 /* ConversationsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E256E34A25E9E99A000E15A6 /* ConversationsCell.swift */; };
 		E2595E5525E6066A00E04E46 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2595E5425E6066A00E04E46 /* Constants.swift */; };
 		E262E03A25DEC9390091EEBB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E262E03925DEC9390091EEBB /* GoogleService-Info.plist */; };
+		E267DE962628E46A003583C7 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E267DE952628E46A003583C7 /* ProfileViewModel.swift */; };
+		E267DE992628E639003583C7 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E267DE982628E639003583C7 /* ProfileCell.swift */; };
 		E28879F625E1B96500308455 /* NewMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28879F525E1B96500308455 /* NewMessageController.swift */; };
 		E294F71925DCA99D00D4992C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E294F71825DCA99D00D4992C /* AppDelegate.swift */; };
 		E294F71B25DCA99D00D4992C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E294F71A25DCA99D00D4992C /* SceneDelegate.swift */; };
@@ -57,6 +59,8 @@
 		E256E34A25E9E99A000E15A6 /* ConversationsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsCell.swift; sourceTree = "<group>"; };
 		E2595E5425E6066A00E04E46 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E262E03925DEC9390091EEBB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E267DE952628E46A003583C7 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		E267DE982628E639003583C7 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		E28879F525E1B96500308455 /* NewMessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageController.swift; sourceTree = "<group>"; };
 		E294F71525DCA99D00D4992C /* BasicChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E294F71825DCA99D00D4992C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -192,6 +196,7 @@
 				E2FE82B325DDED38008655CB /* RegistrationViewModel.swift */,
 				E2E67A9525E4896500E5B58B /* MessageViewModel.swift */,
 				E2B2E5DF25E9F16700E38081 /* ConversationViewModel.swift */,
+				E267DE952628E46A003583C7 /* ProfileViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -203,9 +208,10 @@
 				E2F4744125DDADB900265A56 /* CustomTextField.swift */,
 				E20FDB0B25E1C6A300DC9D45 /* UserCell.swift */,
 				E2103C2E25E45DC2000E9EF5 /* CustomInputAccessoryView.swift */,
-				E2E67A8F25E4797000E5B58B /* MessageCell.swift */,
 				E256E34A25E9E99A000E15A6 /* ConversationsCell.swift */,
+				E2E67A8F25E4797000E5B58B /* MessageCell.swift */,
 				E2258CB625EB3B4D00FBD6C1 /* ProfileHeader.swift */,
+				E267DE982628E639003583C7 /* ProfileCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -337,6 +343,7 @@
 				E2258CB425EB399600FBD6C1 /* ProfileController.swift in Sources */,
 				E252696825DD8C8900BFFCC8 /* Extensions.swift in Sources */,
 				E2595E5525E6066A00E04E46 /* Constants.swift in Sources */,
+				E267DE962628E46A003583C7 /* ProfileViewModel.swift in Sources */,
 				E2FE82B425DDED38008655CB /* RegistrationViewModel.swift in Sources */,
 				E2F4743F25DDA89000265A56 /* InputContainerView.swift in Sources */,
 				E251E52225E0D16600C8D265 /* AuthService.swift in Sources */,
@@ -346,6 +353,7 @@
 				E20FDB0C25E1C6A300DC9D45 /* UserCell.swift in Sources */,
 				E294F73425DCAC3100D4992C /* ConversationsController.swift in Sources */,
 				E2332E3225E1DC5D00CA2C5E /* User.swift in Sources */,
+				E267DE992628E639003583C7 /* ProfileCell.swift in Sources */,
 				E2332E3525E1DCA800CA2C5E /* Service.swift in Sources */,
 				E2E67A9025E4797000E5B58B /* MessageCell.swift in Sources */,
 				E2B2E5E025E9F16700E38081 /* ConversationViewModel.swift in Sources */,
@@ -510,7 +518,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y5PUS6B8C8;
 				INFOPLIST_FILE = BasicChat/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -531,7 +539,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y5PUS6B8C8;
 				INFOPLIST_FILE = BasicChat/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
